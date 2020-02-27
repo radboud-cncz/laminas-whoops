@@ -27,7 +27,10 @@ class PageHandler extends HandlerAbstract implements HandlerInterface {
     public function __construct(ContainerInterface $container, $options = []) {
         parent::__construct($container, $options);
         $this->handler = new WhoopsPageHandler();
+        $this->handler->addResourcePath(dirname(dirname(__DIR__)).'/view/css/');
+        $this->handler->addCustomCss('custom.css');
         $this->configure();
+
         return $this;
     }
 
