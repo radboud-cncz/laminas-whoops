@@ -41,9 +41,8 @@ class WhoopsService extends ServiceAbstract {
     /**
      * Configure Whoops service
      *
-     * @return void
      */
-    public function configure(): void {
+    public function configure() {
         /**
          * Keep this method to true, in case of error
          * was launched without to be catch be Laminas

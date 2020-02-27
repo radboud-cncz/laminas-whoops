@@ -26,9 +26,8 @@ class VisibilityService extends VisibilityServiceAbstract implements VisibilityS
      * Configure Service Handler
      * - Get Connected User
      *
-     * @return void
      */
-    public function configure(): void {
+    public function configure() {
         $container = $this->getContainer();
 
         $this->connectedUser = $container->has('User') ?

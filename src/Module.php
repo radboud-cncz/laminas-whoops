@@ -43,7 +43,6 @@ class Module implements ConfigProviderInterface, BootstrapListenerInterface {
      * Listen to the bootstrap event
      *
      * @param MvcEvent|EventInterface $e
-     * @return void
      */
     public function onBootstrap(EventInterface $e) {
 

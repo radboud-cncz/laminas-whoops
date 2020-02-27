@@ -34,10 +34,9 @@ class PageHandler extends HandlerAbstract implements HandlerInterface {
     /**
      * Inject an editor into the whoops configuration.
      *
-     * @return void
      * @throws \InvalidArgumentException for an invalid editor definition.
      */
-    public function configure(): void {
+    public function configure() {
         /** @var WhoopsPageHandler $handler */
         $handler = $this->getHandler();
 
