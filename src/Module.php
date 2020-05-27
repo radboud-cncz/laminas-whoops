@@ -142,7 +142,7 @@ class Module implements ConfigProviderInterface, BootstrapListenerInterface {
 
                 $response = $e->getResponse();
                 if ($response instanceof HttpResponse) {
-                    if ($response->isSuccess()) {
+                    if ($response->isSuccess() OR $response->isRedirect()) {
                         $response->setStatusCode(HttpResponse::STATUS_CODE_500);
                     }
                 } elseif ($response instanceof ConsoleResponse) {
