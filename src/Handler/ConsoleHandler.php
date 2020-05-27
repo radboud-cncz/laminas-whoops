@@ -34,10 +34,9 @@ class ConsoleHandler extends HandlerAbstract implements HandlerInterface {
     /**
      * Inject an editor into the whoops configuration.
      *
-     * @return void
      * @throws \InvalidArgumentException for an invalid show trace option.
      */
-    public function configure(): void {
+    public function configure() {
         /** @var WhoopsConsoleHandler $handler */
         $handler = $this->getHandler();
 

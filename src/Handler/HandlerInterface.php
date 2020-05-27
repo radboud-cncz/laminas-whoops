@@ -17,7 +17,6 @@ interface HandlerInterface {
     /**
      * Configure Service Handler
      *
-     * @return void
      */
     public function configure();
 }

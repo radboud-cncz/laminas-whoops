@@ -43,9 +43,8 @@ abstract class ServiceAbstract {
     /**
      * Configure Service Handler
      *
-     * @return void
      */
-    abstract public function configure(): void;
+    abstract public function configure();
 
     /**
      * @return array|null
